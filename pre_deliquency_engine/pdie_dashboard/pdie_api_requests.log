@@ -1,0 +1,17 @@
+2026-03-27 17:08:38,438 - INFO - HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,451 - INFO - HTTP Request: POST http://testserver/api/v2/predict "HTTP/1.1 403 Forbidden"
+2026-03-27 17:08:38,463 - INFO - Prediction request for C00001 from testclient
+2026-03-27 17:08:38,467 - INFO - HTTP Request: POST http://testserver/api/v2/predict "HTTP/1.1 404 Not Found"
+2026-03-27 17:08:38,485 - INFO - HTTP Request: GET http://testserver/api/v2/models "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,497 - INFO - HTTP Request: GET http://testserver/api/v2/models/v2/metrics "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,513 - INFO - HTTP Request: GET http://testserver/api/v2/models/v999/metrics "HTTP/1.1 404 Not Found"
+2026-03-27 17:08:38,525 - INFO - Prediction request for C00001 from testclient
+2026-03-27 17:08:38,529 - INFO - HTTP Request: POST http://testserver/api/v2/predict "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,547 - INFO - Batch prediction for 2 customers
+2026-03-27 17:08:38,552 - INFO - HTTP Request: POST http://testserver/api/v2/predict/batch "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,567 - INFO - HTTP Request: POST http://testserver/api/v2/predict/batch "HTTP/1.1 422 Unprocessable Entity"
+2026-03-27 17:08:38,585 - INFO - HTTP Request: POST http://testserver/api/v2/predict/async "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,601 - INFO - HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,620 - INFO - HTTP Request: GET http://testserver/api/v2/health/detailed "HTTP/1.1 200 OK"
+2026-03-27 17:08:38,661 - INFO - Prediction request for C00001 from testclient
+2026-03-27 17:08:38,665 - INFO - HTTP Request: POST http://testserver/api/v2/predict "HTTP/1.1 200 OK"

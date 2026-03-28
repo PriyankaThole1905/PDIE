@@ -1,0 +1,57 @@
+[
+  {
+    "run_id": "rbi-compliant-xgb-v1",
+    "model": "XGBoost",
+    "train_auc": 0.812,
+    "test_auc": 0.801,
+    "features": 12,
+    "date": "Mar 11",
+    "status": "Archived",
+    "hyperparams": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "run_id": "rbi-compliant-xgb-v2",
+    "model": "XGBoost",
+    "train_auc": 0.848,
+    "test_auc": 0.847,
+    "features": 24,
+    "date": "Mar 23",
+    "status": "Production",
+    "hyperparams": {
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "n_estimators": 100
+    }
+  },
+  {
+    "run_id": "lstm-sequence-v1",
+    "model": "LSTM",
+    "train_auc": 0.831,
+    "test_auc": 0.824,
+    "features": "seq-30",
+    "date": "Mar 25",
+    "status": "Staging",
+    "hyperparams": {
+      "hidden_size": 128,
+      "layers": 2,
+      "dropout": 0.3
+    }
+  },
+  {
+    "run_id": "ensemble-mixed-v1",
+    "model": "Ensemble",
+    "train_auc": 0.871,
+    "test_auc": 0.863,
+    "features": "mixed",
+    "date": "Mar 25",
+    "status": "Experiment",
+    "hyperparams": {
+      "xgb_weight": 0.6,
+      "lstm_weight": 0.4
+    }
+  }
+]

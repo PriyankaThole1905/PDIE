@@ -1,0 +1,45 @@
+{
+  "discount_rate": 0.08,
+  "phi_icr": 0.22,
+  "emi_min": 10000,
+  "weights": {
+    "accept": 0.40,
+    "npv": 0.40,
+    "churn": 0.20
+  },
+  "mc_runs": 10000,
+  "acr_min": 0.75,
+  "holiday_reduction_factor": 0.60,
+  "default_coefficients": {
+    "a0": -2.0,
+    "a1": -1.5,
+    "a2": -0.8,
+    "a3": 0.5,
+    "a4": 0.3
+  },
+  "min_recovery_rate": 0.50,
+  "max_holiday_months": 6,
+  "graduated_phases": [
+    {"reduction": 0.50, "months": 3},
+    {"reduction": 0.25, "months": 3},
+    {"reduction": 0.00, "months": -1}
+  ],
+  "asset_backed": {
+    "lien_multiplier": 1.5,
+    "relief_months": 6,
+    "release_ontime_payments": 6
+  },
+  "consolidation": {
+    "rate_discount": 0.02,
+    "min_rate": 0.08,
+    "max_tenure_months": 60
+  },
+  "stress_scenarios": {
+    "base": {"income_shock": 0.0, "weight": 0.6},
+    "salary_delay": {"income_shock": -0.20, "weight": 0.3},
+    "job_loss": {"income_shock": -0.40, "weight": 0.1}
+  },
+  "model_version": "2.0.0",
+  "currency": "INR",
+  "date_format": "dd-mm-yyyy"
+}

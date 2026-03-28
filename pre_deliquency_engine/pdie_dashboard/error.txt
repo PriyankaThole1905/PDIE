@@ -1,0 +1,19 @@
+
+============================================================
+???? PDIE Enterprise ML Infrastructure Boot Sequence
+============================================================
+
+???????  1. Starting Feast-inspired Feature Store...
+   ??? Loaded 8 production features.
+
+???? 2. Initializing LSTM Sequence Model (PyTorch)...
+   ??? Inference ready. Test Score: 36.8
+
+??? 3. Connecting to Kafka Topic 'pdie.transactions.raw'...
+Kafka Consumer: Started in DEMO MODE.
+   ??? Consumer started. Simulating 3 live events...
+Starting Stream Simulation (3 events at 10x speed)...
+   ???? Processed 3 events in 150ms. Alert: SALARY_DELAY_RISK
+
+???? 4. Triggering Airflow DAG Local Runner (Nightly Rescore)...
+???? Starting PDIE Nightly Portfolio Rescore Pipeline
